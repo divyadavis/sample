@@ -1,0 +1,62 @@
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/xx$ sudo userdel yy
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/xx$ ls -l
+total 0
+-rw-rw-r-- 1 1005 mca 0 Jan 30 14:06 xfile.txt
+
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ sudo useradd -m yy 
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ sudo groupadd sales
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ sudo usermod -g sales usr1
+
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ sudo usermod -p pass123 usr1
+
+
+
+
+
+redirection:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ cat > file.txt
+ffffff
+ffffff
+:wq
+^Amca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ date >> file1
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ cat < file.txt
+ffffff
+ffffff
+
+
+pipelin:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ ls | more
+file1
+file.txt
+pgm1
+pgm2.txt
+sample.txt
+sam.txt
+system design-cycle.docx
+systemdesignmaterials2.odt
+system design-materials.odt
+Unix_Linux Lesson 2_ cp, mv, rm, rmdir, cat, more, head, tail, grep, wc.html
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ who | sort
+mca      tty7         2019-01-30 13:08 (:0)
+
+
+
+
+login:
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ sudo passwd divya
+[sudo] password for mca: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+

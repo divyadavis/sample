@@ -1,0 +1,140 @@
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/samplee$ ls -l             //permissions
+total 8
+-rw-rw-r-- 1 mca mca 78 Jan 28 14:56 sampl.txt
+-rw-rw-r-- 1 mca mca 78 Jan 28 14:56 sam.txt
+
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/samplee$ pwd
+/home/mca/samplee
+
+
+
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/samplee$ vi fil.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/samplee$ cat fil.txt
+i
+divya
+devika
+megha
+:wq
+
+
+
+echo:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ echo hello
+hello
+
+read:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ read x
+hii
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ echo $x
+hii
+
+cd:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ cd ..
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca$ cd divya
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ 
+
+
+chown:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ sudo useradd -m divya
+[sudo] password for mca: 
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ sudo chown divya sample.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ ls -l
+total 340
+-rw-rw-r-- 1 mca   mca    390 Jan 28 15:36 pgm1
+-rw-rw-r-- 1 divya mca     23 Jan 30 13:20 sample.txt
+-rw------- 1 mca   mca     18 Jan 30 13:23 sam.txt
+
+
+chmod:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ chmod 400 sam.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ ls -l
+total 340
+-rw-rw-r-- 1 mca   mca    390 Jan 28 15:36 pgm1
+-rw-rw-r-- 1 divya mca     23 Jan 30 13:20 sample.txt
+-r-------- 1 mca   mca     18 Jan 30 13:23 sam.txt
+-rw-rw-r-- 1 mca   mca  21570 Jan 28 14:21 system design-cycle.docx
+-rw-rw-r-- 1 mca   mca  41331 Jan 30 13:12 systemdesignmaterials2.odt
+-rw-rw-r-- 1 mca   mca 207540 Jan 28 14:22 system design-materials.odt
+-rw-rw-r-- 1 mca   mca  37686 Jan 28 14:21 Unix_Linux Lesson 2_ cp, mv, rm, rmdir, cat, more, head, tail, grep, wc.html
+
+
+pwd:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ pwd
+/home/mca/mca/divya
+
+tail:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ tail -c 10  file.txt
+a/divya$ 
+
+
+head:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ head -c 2  file.txt
+mc
+
+expr:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ expr 2 + 4
+6
+
+
+grep:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ grep h sample.txt
+hello
+hello world
+hii
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ grep -c h sample.txt
+3
+
+
+wc:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ wc -w sample.txt
+4 sample.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ wc -c sample.txt
+23 sample.txt
+
+more:
+//line by line by enter key for large prgms
+less:
+
+
+cut:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ cat sample.txt | cut -c 2
+e
+e
+i
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ cat sample.txt | cut -c 1-6
+hello
+hello 
+hii
+
+
+paste:
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ paste sample.txt file.txt
+hello	try and fail
+hello world	but don"t fail to try
+hii	
+
+
+find:
+	
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/mca/divya$ find -name sample.txt
+./sample.txt
+
+
+
